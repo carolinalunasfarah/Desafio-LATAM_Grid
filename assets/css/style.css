@@ -8,7 +8,7 @@
 /* nav */
 nav {
     grid-area: nav;
-    background-color: rgba(235, 174, 152, 0.856);
+    background-color: rgba(241, 184, 163, 0.856);
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -24,12 +24,14 @@ aside {
     grid-area: aside;
     display: flex;
     flex-direction: column;
+    background-color: rgba(114, 126, 57, 0.226);
 }
 
 /* main */
 main {
     grid-area: main;
     background-color: rgba(115, 126, 57, 0.5);
+    min-height: 100vh;
 }
 
 /* footer */
@@ -38,16 +40,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
-    margin-top: 2rem;
+    height: 3rem;
+    padding: 0.5rem 0rem;
+    background-color: rgba(241, 184, 163, 0.856);
 }
 
 footer p {
-    font-weight: 100;
+    font-weight: 900;
 }
 
 footer p:hover {
-    color:rgb(235, 174, 152);
+    color:rgb(113, 121, 73);
     cursor: pointer;
 }
 

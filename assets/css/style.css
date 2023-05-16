@@ -1,0 +1,33 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #1b1b1b;
+}
+
+/* nav */
+nav {
+    grid-area: nav;
+}
+
+/* aside */
+aside {
+    grid-area: aside;
+}
+
+/* main */
+main {
+    grid-area: main;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+}
+
+/* structure */
+.container {
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'aside main main'
+    'footer footer footer';
+}

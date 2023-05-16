@@ -27,11 +27,57 @@ aside {
     background-color: rgba(114, 126, 57, 0.226);
 }
 
+.categories {
+    padding: 1rem;
+}
+
+.categories h3 {
+    padding-bottom: 1rem;
+}
+
+.categories p{
+    padding: 0.5rem 0rem;
+}
+
+.categories p:hover {
+    color: rgb(255, 135, 91);
+    cursor: pointer;
+}
+
+.categories b:hover {
+    color: rgba(247, 162, 131, 0.856);
+}
+
+
 /* main */
+.jacket {
+    grid-area: a;
+}
+
+.watch {
+    grid-area: b;
+}
+
+.shoes {
+    grid-area: c;
+}
+
+.earrings {
+    grid-area: d;
+}
+
+.perfume {
+    grid-area: e;
+}
+
 main {
     grid-area: main;
     background-color: rgba(115, 126, 57, 0.5);
     min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    'd e none';
 }
 
 /* footer */
@@ -54,7 +100,7 @@ footer p:hover {
     cursor: pointer;
 }
 
-/* structure */
+/* general structure */
 .container {
     display: grid;
     grid-template-areas: 

@@ -24,7 +24,7 @@ aside {
     grid-area: aside;
     display: flex;
     flex-direction: column;
-    background-color: rgba(114, 126, 57, 0.226);
+    background-color: rgba(114, 126, 57, 0.61);
 }
 
 .categories {
@@ -47,7 +47,6 @@ aside {
 .categories b:hover {
     color: rgba(247, 162, 131, 0.856);
 }
-
 
 /* main */
 .jacket {
@@ -72,12 +71,25 @@ aside {
 
 main {
     grid-area: main;
-    background-color: rgba(115, 126, 57, 0.5);
+    background-color: rgba(114, 126, 57, 0.233);
     min-height: 100vh;
     display: grid;
     grid-template-areas: 
     'a b c'
     'd e none';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30rem;
+}
+
+.card img {
+    width: 15rem;
 }
 
 /* footer */

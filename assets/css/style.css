@@ -1,11 +1,21 @@
 * {
     font-family: 'Roboto', sans-serif;
     color: #1b1b1b;
+    margin: 0;
 }
 
 /* nav */
 nav {
     grid-area: nav;
+    background-color: rgb(235, 174, 152);
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1 {
+    font-weight: 700;
 }
 
 /* aside */

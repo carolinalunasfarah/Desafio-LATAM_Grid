@@ -2,12 +2,13 @@
     font-family: 'Roboto', sans-serif;
     color: #1b1b1b;
     margin: 0;
+    border: #1b1b1b solid 1px;
 }
 
 /* nav */
 nav {
     grid-area: nav;
-    background-color: rgb(235, 174, 152);
+    background-color: rgba(235, 174, 152, 0.856);
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -21,11 +22,14 @@ nav h1 {
 /* aside */
 aside {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
 }
 
 /* main */
 main {
     grid-area: main;
+    background-color: rgba(115, 126, 57, 0.5);
 }
 
 /* footer */
@@ -34,6 +38,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-weight: 100;
+}
+
+footer p:hover {
+    color:rgb(235, 174, 152);
+    cursor: pointer;
 }
 
 /* structure */
@@ -43,4 +58,5 @@ footer {
     'nav nav nav'
     'aside main main'
     'footer footer footer';
+    grid-template-columns: 1fr 4fr;
 }
